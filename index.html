@@ -10,274 +10,258 @@
     <title>Photo Feed Bootstrap</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar bg-light">
-                <!-- Logo and Heading -->
-            <div class="col-9">
-                <a class="navbar-brand">
-                    <i class="bi bi-instagram"></i>
-                    Instagram
-                </a>
-            </div>
-
-            <div class="col-3 d-flex justify-content-end">
-                    <!-- Modal & Input -->
-                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label">Caption:</label>
-                                    <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+    <!-- Logo and Heading -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-instagram"></i>
+            Instagram
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <!-- Modal -->
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <button type="button" class="btn btn-light">
-                                    <i class="bi bi-camera"></i>
-                                </button>
-                                <button type="button" class="btn btn-light">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Publish</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Gear dropdown menu -->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-gear-fill"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Botones Javascript behavior -->
-        <div class="row m-2">
-            <div class="col-12 d-flex justify-content-center">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <div class="row m-3">
-                        <!-- Img1 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img1.jpg" alt="postImage">
-                        </div>
-                        <!-- Img2 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img2.jpg" alt="postImage">
-                        </div>
-                        <!-- Img3 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img3.jpeg" alt="postImage">
-                        </div>
-                    </div>
-                        
-                    <div class="row m-3">
-                        <!-- Img4 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img4.jpeg" alt="postImage">
-                        </div>
-                        <!-- Img5 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img5.jpeg" alt="postImage">
-                        </div>
-                        <!-- Img6 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img6.jpeg" alt="postImage">
-                        </div>
-                    </div>
-                    <div class="row m-3">
-                        <!-- Img7 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img7.jpg" alt="postImage">
-                        </div>
-                        <!-- Img8 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img8.jpeg" alt="postImage">
-                        </div>
-                        <!-- Img9 -->
-                        <div class="col-4">
-                            <img class="img-fluid w-100 h-100" src="./assets/img/img9.jpg" alt="postImage">
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                    <div>
-                        <!-- Post1 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>My crazy dog Spark!</h3>
-                                        <span>08/26</span>
+                                <div class="modal-body">
+                                    <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Caption:</label>
+                                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
                                     </div>
-                                    <img src="./assets/img/img1.jpg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>201 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="bi bi-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </button>
+                                    </form>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- Post2 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Students enjoying their time</h3>
-                                        <span>08/27</span>
-                                    </div>
-                                    <img src="./assets/img/img2.jpg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>105 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post3 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Vacations at Greece!</h3>
-                                        <span>08/27</span>
-                                    </div>
-                                    <img src="./assets/img/img3.jpeg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>420 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post4 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Having a nice time!</h3>
-                                        <span>08/27</span>
-                                    </div>
-                                    <img src="./assets/img/img4.jpeg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>201 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post5 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Should a beautiful city...</h3>
-                                        <span>08/28</span>
-                                    </div>
-                                    <img src="./assets/img/img5.jpeg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>501 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post6 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>CR7 did it again!!</h3>
-                                        <span>08/28</span>
-                                    </div>
-                                    <img src="./assets/img/img6.jpeg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>999 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post7 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Some family time...</h3>
-                                        <span>08/29</span>
-                                    </div>
-                                    <img src="./assets/img/img7.jpg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>340 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post8 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Learning to code...</h3>
-                                        <span>08/30</span>
-                                    </div>
-                                    <img src="./assets/img/img8.jpeg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>550 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Post9 -->
-                        <div class="row m-5">
-                            <div class="col-12 d-flex justify-content-center">
-                                <div class="card" style="width: 40rem;">
-                                    <div class="card-header bg-light d-flex justify-content-between">
-                                        <h3>Reunited with my BFF!</h3>
-                                        <span>08/30</span>
-                                    </div>
-                                    <img src="./assets/img/img9.jpg" alt="postImage" >
-                                    <div class="card-body">
-                                        <span><b>89 likes</b></span>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>   
+                </li>
+                <!-- Gear button -->
+                <li class="nav-item">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+          </div>
         </div>
+    </nav>
+
+
+        <!-- Botones Javascript behavior -->
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center p-2">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row justify-content-center g-2 flex-column flex-md-row ps-2 pe-2">
+                    <!-- Img1 -->
+                    <div class="col-md-6 col-lg-4 mt-2">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img1.jpg" alt="postImage">
+                    </div>
+                    <!-- Img2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img2.jpg" alt="postImage">
+                    </div>
+                    <!-- Img3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img3.jpeg" alt="postImage">
+                    </div>
+                    <!-- Img4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img4.jpeg" alt="postImage">
+                    </div>
+                    <!-- Img5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img5.jpeg" alt="postImage">
+                    </div>
+                    <!-- Img6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img6.jpeg" alt="postImage">
+                    </div>
+                    <!-- Img7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img7.jpg" alt="postImage">
+                    </div>
+                    <!-- Img8 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img8.jpeg" alt="postImage">
+                    </div>
+                    <!-- Img9 -->
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid w-100 h-100" src="./assets/img/img9.jpg" alt="postImage">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <!-- Post1 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-1">
+                    <div class="card col-lg-6 col-md-10 col-sm-12 d-flex">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>My crazy dog Spark!</h3>
+                            <span>08/26</span>
+                        </div>
+                        <img class="img-fluid w-100" src="./assets/img/img1.jpg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>201 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post2 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Students enjoying their time</h3>
+                            <span>08/27</span>
+                        </div>
+                        <img class="img-fluid w-100" src="./assets/img/img2.jpg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>105 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post3 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Vacations at Greece!</h3>
+                            <span>08/27</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img3.jpeg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>420 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post4 -->
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Having a nice time!</h3>
+                            <span>08/27</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img4.jpeg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>201 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post5 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Should a beautiful city...</h3>
+                            <span>08/28</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img5.jpeg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>501 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post6 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>CR7 did it again!!</h3>
+                            <span>08/28</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img6.jpeg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>999 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post7 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Some family time...</h3>
+                            <span>08/29</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img7.jpg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>340 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post8 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Learning to code...</h3>
+                            <span>08/30</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img8.jpeg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>550 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post9 -->
+                <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card col-lg-6 card-center col-md-10 col-sm-12">
+                        <div class="card-header bg-light d-flex justify-content-between">
+                            <h3>Reunited with my BFF!</h3>
+                            <span>08/30</span>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="./assets/img/img9.jpg" alt="postImage" >
+                        <div class="card-body">
+                            <span><b>89 likes</b></span>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
     
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
